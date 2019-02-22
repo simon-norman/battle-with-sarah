@@ -14,5 +14,10 @@ describe Player do
       expect(player.hp).to eq(hp)
     end
 
+    it 'should reduce the number of hp by specified amount' do
+      player.damage(10)
+
+      expect(player.hp).to eq(hp - 10)
+    end
   end
 end

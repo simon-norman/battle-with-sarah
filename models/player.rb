@@ -7,4 +7,7 @@ class Player
     @hp = hp
   end
 
+  def damage(value)
+    @hp -= value
+  end
 end
